@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenny Li Zhai — Agile Transformation Coach</title>
+</head>
+<body>
+
+<script>
+/* =====================================================
+   ✏️  RESUME DATA — 只需要编辑这里！
+   =====================================================
+   规则：
+   - 文字用引号包住，结尾加逗号
+   - 列表项每行一个，格式：'内容',
+   - 不要删除括号 { } [ ]
+   ===================================================== */
+
+const DATA = {
+
+  // 顶部个人信息
+  name: 'Jenny Li Zhai',
+  title: 'Agile Transformation Coach & Program Manager',
+  tagline: '15+ years driving enterprise-scale Agile transformation across global organizations',
+  phone: '+86 186 1659 5225',
+  email: 'jennyzhai214@126.com',
+
+  // Hero 标签（技能关键词，展示在名字下方）
+  tags: [
+    'SAFe SPC',
+    'LeSS Practitioner',
+    'DevOps Master',
+    'PMI-ACP',
+    'SA-ACSM®',
+    'AI Coach',
+  ],
+
+  // 三个数字卡片
+  stats: [
+    { number: '15+', label: 'Years Experience' },
+    { number: '10+', label: 'Certifications' },
+    { number: '5',   label: 'Countries & Regions' },
+  ],
+
+  // Profile 要点
+  profile: [
+    'Drive Agile transformation in Hardware industry across product lines globally',
+    'Servant leader facilitating ART events (PI Planning / Inspect & Adapt) under SAFe',
+    'Establish Lean Portfolio Management at organization level',
+    'Set up DevOps processes; visualize flow-of-value metrics to identify bottlenecks',
+    'Lead cross-geography Scrum teams across China, US, and Ireland',
+    'Define Digital team intake, development, and escalation processes end-to-end',
+  ],
+
+  // 工作经历（从新到旧）
+  experience: [
+    {
+      company: 'Schneider Electric',
+      dates: 'Sep 2022 — Present',
+      role: 'Agile Transformation Coach — Global Agile Transformation Office',
+      bullets: [
+        'Built global Agile transformation roadmap and translated it into an action plan for China Hub',
+        'Identified value streams and launched multiple Agile Release Trains across China Hub',
+        'Adopted Lean Portfolio Management at Epic level; facilitated first PI Planning and I&A sessions',
+        'Coached RTEs, POs, and Scrum Masters; initiated Plant and LOB Scrum transformations',
+        'Led Customer Feedback Loop (CFL) implementation across Industry Automation business',
+        'Initiated AI workshop to identify pain points and leverage AI agents for org efficiency',
+        'Designed training roadmap and delivered 10+ training sessions for China Hub',
+        'Used AI-powered tools to automate process and provide personalized coaching',
+        'Familar with AI Model like ChatGPT, Gemini, Claude, and AI agent frameworks like LangChain and AgentGPT',
+        'Vibe coding for myself and my kid painpoints'
+      ],
+    },
+    {
+      company: 'Red Hat',
+      dates: 'Aug 2019 — Sep 2022',
+      role: 'Open Innovation Lab Lead · Agile Engagement Lead · Agile Coach (APAC)',
+      bullets: [
+        'Designed and led end-to-end Red Hat Open Innovation Lab in China (People, Process, Technology)',
+        'Facilitated Design Thinking and Lean UX workshops to build MVPs with evidence-based decisions',
+        'Built DevOps/Agile maturity metrics to drive continuous improvement',
+        'Coached scaling from one Scrum team to multiple teams using LeSS and SAFe',
+        '<strong>Key clients:</strong> CIMB Niaga Indonesia · Southern China Energy (20 wks) · Top China Manufacturing (6 wks)',
+      ],
+    },
+    {
+      company: 'Accenture',
+      dates: 'Apr 2019 — Sep 2019',
+      role: 'Agile Coach · Scrum Master',
+      bullets: [
+        'Facilitated product workshops and liaised with Product Management on AI Bot release planning',
+        'Supported product platform capability building and delivery team formation',
+      ],
+    },
+    {
+      company: 'Thermo Fisher Scientific',
+      dates: 'Jul 2018 — Apr 2019',
+      role: 'Program Manager · Agile Coach — Digital Solution China',
+      bullets: [
+        'Set up Scrum team from scratch; implemented JIRA, Jenkins, TDD, BDD, ScrumBan',
+        'Drove CI/CD pipeline setup; built PowerBI dashboards for full delivery lifecycle visibility',
+        'Defined ROI model, intake process, development process, and change request process',
+        '<strong>Projects:</strong> Smart City environmental monitoring platform · AI online service chatbot',
+      ],
+    },
+    {
+      company: 'Ali-YiGuo E-commerce',
+      dates: 'Jan 2018 — Jun 2018',
+      role: 'Program Manager · Agile Coach (PMO)',
+      bullets: [
+        'Built full PM processes, KPI system, and project management tools from zero',
+        'Leveraged DevOps to streamline processes enabling faster business delivery',
+        'Initiated Service Management Office; visualized flow metrics (flow time, cumulative flow)',
+      ],
+    },
+    {
+      company: 'Dell EMC',
+      dates: 'Apr 2014 — Jan 2018',
+      role: 'RTE / Scrum Master (SAFe) · Program Manager',
+      bullets: [
+        'Facilitated ART events and Scrum of Scrums across China, US, and Ireland',
+        'Led multi-geography expert teams to deliver Private Cloud solution portfolios',
+        'Managed up to 8 simultaneous projects with full milestone accountability',
+        '<strong>Project:</strong> AIM Big Data Platform on Pivotal Cloud Foundry (HDFS, Hive, Tableau, MongoDB)',
+      ],
+    },
+    {
+      company: 'Alcatel-Lucent Shanghai Bell',
+      dates: 'Mar 2009 — Apr 2013',
+      role: 'Project Manager · Senior Automation Test Engineer',
+      bullets: [
+        'Led project planning and quality assurance for LTE TLA6.0 (4G eNodeB base station)',
+        'Set up Scrum teams across multiple domains; drove R&D process optimization',
+        'Developed and automated test cases; led test strategy, plan, and report documentation',
+      ],
+    },
+    {
+      company: 'Aalborg Industries — Sydney, Australia',
+      dates: 'Jul 2007 — Dec 2008',
+      role: 'Service Support Engineer (Onsite)',
+      bullets: [
+        'Managed client relationships on marine ships at Singapore Keppel Shipyard',
+        'Commissioned Siemens PLC/HMI programming and optimization per customer requirements',
+      ],
+    },
+  ],
+
+  // 教育
+  education: [
+    {
+      degree: 'Master of Engineering Management',
+      school: 'University of Technology, Sydney',
+      dates: 'Jan 2006 – Dec 2007',
+    },
+    {
+      degree: 'Master of Electrical Engineering',
+      school: 'University of New South Wales, Sydney',
+      dates: 'Jul 2004 – Dec 2005',
+    },
+  ],
+
+  // AI 专项经历（展示在独立 tab）
+  ai: [
+    {
+      icon: '🤖',
+      title: 'AI Workshop Facilitation',
+      context: 'Schneider Electric · 2023–Present',
+      desc: 'Initiated and facilitated AI workshops to identify process pain points across teams; helped organizations adopt AI agents and automation tools to boost efficiency.',
+    },
+    {
+      icon: '🛠️',
+      title: 'AI Tools & Frameworks',
+      context: 'Hands-on Experience',
+      desc: 'Proficient with AI models including ChatGPT, Gemini, and Claude. Familiar with AI agent frameworks such as LangChain and AgentGPT for workflow automation.',
+    },
+    {
+      icon: '💬',
+      title: 'AI Chatbot Product Delivery',
+      context: 'Accenture & Thermo Fisher · 2018–2019',
+      desc: 'Led release planning for AI Bot at Accenture. Built an online service chatbot for Thermo Fisher using Machine Learning, NLP, Vue and Python to serve industrial customer needs.',
+    },
+    {
+      icon: '👩‍💻',
+      title: 'Vibe Coding',
+      context: 'Personal Projects',
+      desc: 'Use AI-assisted coding to build tools that solve real-life pain points — for myself and my kid. Exploring the intersection of AI and everyday problem-solving.',
+    },
+    {
+      icon: '📊',
+      title: 'AI-Powered Process Automation',
+      context: 'Schneider Electric · 2024',
+      desc: 'Applied AI-powered tools to automate coaching processes and provide personalized Agile coaching at scale across China Hub.',
+    },
+    {
+      icon: '🎓',
+      title: 'AI Model Training Certification',
+      context: 'Certified',
+      desc: 'Holds an AI model training certification. Continuously learning and applying AI capabilities in enterprise transformation contexts.',
+    },
+  ],
+
+  // 证书
+  certifications: [
+    'SPC® — SAFe Program Consultant',
+    'AI Model Training Certification',
+    'SA-ACSM® — Advanced Certified Scrum Master by Scrum Alliance',
+    'EXIN DevOps Master® — Advanced-level Certification on DevOps',
+    'PMI-ACP® — Agile Coach Practice',
+    'CBAP® — Certified Business Analysis Professional (in processing)',
+    'MarsLander® TTT — ITSM Simulation Train the Trainer',
+    'SA-CAL® — Certified Agile Leadership by Scrum Alliance',
+    'Certified LeSS Practitioner®',
+  ],
+
+};
+
+/* =====================================================
+   以下是页面样式和渲染逻辑，不需要修改
+   ===================================================== */
+
+const CSS = `
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0f172a; --sky: #38bdf8; --teal: #0891b2;
+    --white: #fff; --g50: #f8fafc; --g100: #f1f5f9;
+    --g200: #e2e8f0; --g600: #475569; --g800: #1e293b;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--g800); line-height: 1.7; overflow-x: hidden; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(15,23,42,0.94); backdrop-filter: blur(12px); display: flex; justify-content: space-between; align-items: center; padding: 0 48px; height: 54px; }
+  .nav-name { color: var(--white); font-weight: 700; font-size: 0.92rem; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1.2px; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sky); }
+
+  .hero { min-height: 100vh; background: var(--navy); display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 40px 64px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(56,189,248,0.12) 0%, transparent 65%); top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none; }
+  .hero-content { position: relative; z-index: 1; max-width: 720px; }
+  .hero-eyebrow { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 3.5px; color: var(--sky); margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(2.6rem,6vw,4.2rem); font-weight: 800; color: var(--white); line-height: 1.08; margin-bottom: 18px; letter-spacing: -1px; }
+  .hero-subtitle { font-size: clamp(0.95rem,2vw,1.15rem); color: rgba(255,255,255,0.55); margin-bottom: 36px; }
+  .hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-bottom: 44px; }
+  .tag { background: rgba(56,189,248,0.12); border: 1px solid rgba(56,189,248,0.28); color: var(--sky); padding: 5px 15px; border-radius: 100px; font-size: 0.78rem; font-weight: 500; }
+  .hero-contact { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
+  .hero-contact a, .hero-contact span { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 0.86rem; transition: color 0.2s; }
+  .hero-contact a:hover { color: var(--white); }
+  .scroll-hint { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.25); font-size: 0.72rem; animation: bob 2s ease-in-out infinite; }
+  @keyframes bob { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(7px)} }
+
+  section { padding: 88px 40px; }
+  section:nth-child(even) { background: var(--g50); }
+  .container { max-width: 960px; margin: 0 auto; }
+  .section-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 2.8px; color: var(--teal); font-weight: 700; margin-bottom: 6px; }
+  .section-title { font-size: clamp(1.6rem,3vw,2.1rem); font-weight: 800; color: var(--navy); margin-bottom: 48px; }
+
+  .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-bottom: 44px; }
+  .stat-card { background: var(--navy); color: var(--white); padding: 32px 24px; border-radius: 14px; text-align: center; }
+  .stat-number { font-size: 3rem; font-weight: 800; color: var(--sky); line-height: 1; }
+  .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-top: 8px; }
+  .profile-bullets { list-style: none; display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+  .profile-bullets li { padding: 14px 18px; background: var(--white); border-left: 3px solid var(--sky); border-radius: 0 10px 10px 0; font-size: 0.88rem; color: var(--g600); box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+
+  .timeline { position: relative; padding-left: 36px; }
+  .timeline::before { content: ''; position: absolute; left: 8px; top: 10px; bottom: 10px; width: 2px; background: linear-gradient(to bottom, var(--sky), var(--teal), #1e40af); border-radius: 2px; }
+  .timeline-item { position: relative; margin-bottom: 36px; }
+  .timeline-item::before { content: ''; position: absolute; left: -30px; top: 10px; width: 13px; height: 13px; border-radius: 50%; background: var(--sky); border: 2px solid var(--white); box-shadow: 0 0 0 3px rgba(56,189,248,0.4); }
+  .job-card { background: var(--white); border-radius: 14px; padding: 24px 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); transition: transform 0.25s, box-shadow 0.25s; }
+  .job-card:hover { transform: translateY(-3px); box-shadow: 0 10px 36px rgba(0,0,0,0.11); }
+  .job-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 3px; }
+  .job-company { font-weight: 800; font-size: 1.02rem; color: var(--navy); }
+  .job-dates { font-size: 0.77rem; background: var(--g100); color: var(--g600); padding: 3px 11px; border-radius: 100px; white-space: nowrap; }
+  .job-role { font-size: 0.83rem; color: var(--teal); font-style: italic; margin-bottom: 12px; }
+  .job-bullets { padding-left: 16px; color: var(--g600); font-size: 0.87rem; }
+  .job-bullets li { margin-bottom: 4px; }
+
+  .cert-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 13px; }
+  .cert-card { background: var(--white); border: 1px solid var(--g200); border-radius: 10px; padding: 15px 17px; font-size: 0.84rem; color: var(--g800); display: flex; align-items: flex-start; gap: 10px; transition: border-color 0.2s, box-shadow 0.2s; }
+  .cert-card:hover { border-color: var(--sky); box-shadow: 0 4px 18px rgba(56,189,248,0.14); }
+  .cert-icon { color: var(--sky); flex-shrink: 0; margin-top: 2px; }
+
+  .ai-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+  .ai-card { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid rgba(56,189,248,0.2); border-radius: 14px; padding: 26px 24px; transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s; }
+  .ai-card:hover { border-color: rgba(56,189,248,0.6); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(56,189,248,0.12); }
+  .ai-icon { font-size: 1.8rem; margin-bottom: 12px; }
+  .ai-title { font-weight: 700; font-size: 1rem; color: var(--white); margin-bottom: 4px; }
+  .ai-context { font-size: 0.75rem; color: var(--sky); margin-bottom: 10px; letter-spacing: 0.3px; }
+  .ai-desc { font-size: 0.86rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+  .edu-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+  .edu-card { background: var(--navy); color: var(--white); padding: 30px 28px; border-radius: 14px; }
+  .edu-badge { display: inline-block; background: rgba(56,189,248,0.18); color: var(--sky); font-size: 0.72rem; padding: 3px 11px; border-radius: 100px; margin-bottom: 12px; }
+  .edu-degree { font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
+  .edu-school { font-size: 0.84rem; color: rgba(255,255,255,0.55); }
+
+  footer { background: var(--navy); color: rgba(255,255,255,0.35); text-align: center; padding: 28px; font-size: 0.8rem; }
+
+  .fade-in { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; } .nav-links { display: none; }
+    section { padding: 60px 20px; }
+    .stats-row, .profile-bullets, .cert-grid, .edu-grid, .ai-grid { grid-template-columns: 1fr; }
+  }
+  @media print {
+    nav, .scroll-hint { display: none; }
+    .hero { min-height: auto; padding: 40px; }
+    .fade-in { opacity: 1; transform: none; }
+    section { padding: 40px 20px; }
+  }
+`;
+
+function fi(content) {
+  return `<span class="fade-in">${content}</span>`;
+}
+
+function render() {
+  const styleEl = document.createElement('style');
+  styleEl.textContent = CSS;
+  document.head.appendChild(styleEl);
+
+  document.title = `${DATA.name} — ${DATA.title}`;
+
+  document.body.innerHTML = `
+    <nav>
+      <div class="nav-name">${DATA.name}</div>
+      <ul class="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Agile · SAFe · DevOps · Leadership</div>
+        <h1>${DATA.name}</h1>
+        <p class="hero-subtitle">${DATA.tagline}</p>
+        <div class="hero-tags">
+          ${DATA.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+        <div class="hero-contact">
+          <span>${DATA.phone}</span>
+          <a href="mailto:${DATA.email}">${DATA.email}</a>
+        </div>
+      </div>
+      <div class="scroll-hint">↓ scroll</div>
+    </div>
+
+    <section id="profile">
+      <div class="container">
+        <div class="section-label fade-in">About</div>
+        <h2 class="section-title fade-in">Profile</h2>
+        <div class="stats-row">
+          ${DATA.stats.map(s => `
+            <div class="stat-card fade-in">
+              <div class="stat-number">${s.number}</div>
+              <div class="stat-label">${s.label}</div>
+            </div>`).join('')}
+        </div>
+        <ul class="profile-bullets">
+          ${DATA.profile.map(p => `<li class="fade-in">${p}</li>`).join('')}
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-label fade-in">Career History</div>
+        <h2 class="section-title fade-in">Experience</h2>
+        <div class="timeline">
+          ${DATA.experience.map(j => `
+            <div class="timeline-item fade-in">
+              <div class="job-card">
+                <div class="job-top">
+                  <span class="job-company">${j.company}</span>
+                  <span class="job-dates">${j.dates}</span>
+                </div>
+                <div class="job-role">${j.role}</div>
+                <ul class="job-bullets">
+                  ${j.bullets.map(b => `<li>${b}</li>`).join('')}
+                </ul>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </section>
+
+    <section id="ai">
+      <div class="container">
+        <div class="section-label fade-in">Artificial Intelligence</div>
+        <h2 class="section-title fade-in">AI Experience</h2>
+        <div class="ai-grid">
+          ${DATA.ai.map(a => `
+            <div class="ai-card fade-in">
+              <div class="ai-icon">${a.icon}</div>
+              <div class="ai-title">${a.title}</div>
+              <div class="ai-context">${a.context}</div>
+              <div class="ai-desc">${a.desc}</div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-label fade-in">Academic Background</div>
+        <h2 class="section-title fade-in">Education</h2>
+        <div class="edu-grid">
+          ${DATA.education.map(e => `
+            <div class="edu-card fade-in">
+              <div class="edu-badge">${e.dates}</div>
+              <div class="edu-degree">${e.degree}</div>
+              <div class="edu-school">${e.school}</div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="container">
+        <div class="section-label fade-in">Credentials</div>
+        <h2 class="section-title fade-in">Certifications</h2>
+        <div class="cert-grid">
+          ${DATA.certifications.map(c => `
+            <div class="cert-card fade-in">
+              <span class="cert-icon">◆</span>${c}
+            </div>`).join('')}
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      ${DATA.name} &nbsp;·&nbsp; ${DATA.email} &nbsp;·&nbsp; ${DATA.phone}
+    </footer>
+  `;
+
+  // fade-in on scroll
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+}
+
+render();
+</script>
+
+</body>
+</html>
